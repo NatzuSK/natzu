@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #002147;
+    color: white;
+}
+
+.navbar {
+    background: transparent;
+    border: none;
+}
+
+.navbar .nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar .nav-link:hover {
+    color: #ffffff !important;
+}
+
+.btn {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.section h1 {
+    font-size: 3em;
+}
+
+.section p {
+    font-size: 1.2em;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skills-icons i {
+    font-size: 48px;
+    color: #f1f1f1;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skills-icons i:hover {
+    transform: scale(1.2);
+}
+
+.skill-icon img {
+    width: 48px;
+    height: 48px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.skill-icon img:hover {
+    filter: brightness(1) invert(0);
+    transform: scale(1.2);
+}
+
+.fa-html5 {
+    color: #e34f26;
+}
+
+.fa-css3-alt {
+    color: #1572b6;
+}
+
+.fa-js {
+    color: #f7df1e;
+}
+
+.fa-python {
+    color: #306998;
+}
+
+.fa-bootstrap {
+    color: #563d7c;
+}
+
+.fa-php {
+    color: #4b2e77;
+}
+
+.fa-html5:hover {
+    color: #d54f2e;
+}
+
+.fa-css3-alt:hover {
+    color: #145a8b;
+}
+
+.fa-js:hover {
+    color: #e5c100;
+}
+
+.fa-python:hover {
+    color: #286b8b;
+}
+
+.fa-bootstrap:hover {
+    color: #4b2e77;
+}
+
+.fa-php:hover {
+    color: #3b2673;
+}
+
+
+@media (max-width: 768px) {
+    .section {
+        padding: 20px;
+    }
+
+    .section h1 {
+        font-size: 2.2em;
+    }
+
+    .section p {
+        font-size: 1em;
+    }
+
+    .skills-icons {
+        gap: 15px;
+    }
+
+
+
+    .navbar .nav-link {
+        font-size: 18px;
+    }
+    #about .d-flex {
+        flex-direction: column-reverse !important;
+    }
+}
